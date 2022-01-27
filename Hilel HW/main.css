@@ -1,0 +1,225 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+body {
+  overflow: hidden; }
+
+.navbar {
+  position: relative;
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  z-index: 3;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4); }
+  .navbar .burger {
+    position: relative;
+    width: 5vw;
+    height: 100%;
+    border-right: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .navbar .burger .line_wrapper {
+      position: relative;
+      width: 30px;
+      height: 13px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .navbar .burger .line_wrapper .line1, .navbar .burger .line_wrapper .line2, .navbar .burger .line_wrapper .line3, .navbar .burger .line_wrapper .line4 {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        transition: 0.3s linear all; }
+      .navbar .burger .line_wrapper .line1 {
+        left: 0;
+        top: 0; }
+      .navbar .burger .line_wrapper .line2, .navbar .burger .line_wrapper .line3 {
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0; }
+      .navbar .burger .line_wrapper .line4 {
+        left: 0;
+        bottom: 0; }
+      .navbar .burger .line_wrapper .change_top {
+        animation: burger_anim 1s ease-in-out; }
+  .navbar .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
+    .navbar .logo h2 span {
+      color: #4ED401; }
+  .navbar .student_name {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .navbar .student_name .ball {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #e99904;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      cursor: pointer; }
+
+.student_info {
+  position: absolute;
+  top: 7vh;
+  right: -20%;
+  width: 20%;
+  height: 30%;
+  border-radius: 0 0px 0 20px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  box-sizing: border-box;
+  z-index: 2;
+  align-items: center;
+  padding: 3% 0;
+  transition: 0.3s linear all;
+  background-color: #fff; }
+  .student_info .info_item {
+    width: 90%;
+    min-height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black; }
+    .student_info .info_item p {
+      font-weight: 800;
+      font-size: 17px; }
+
+.side_bar {
+  position: absolute;
+  top: 7vh;
+  width: 30%;
+  left: -30%;
+  height: 93vh;
+  box-sizing: border-box;
+  border-right: 1px solid silver;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 3% 0;
+  overflow-y: auto;
+  z-index: 2;
+  transition: 0.3s linear all;
+  background-color: #fff; }
+  .side_bar .hw_block {
+    min-height: 10%;
+    width: 90%;
+    border-bottom: 1px solid silver;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    cursor: pointer; }
+  .side_bar .hw_block:hover {
+    background-color: #f0f0f0; }
+
+.homework {
+  width: 100%;
+  height: 93vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .homework .hw_item {
+    width: 80%;
+    height: 93vh;
+    display: flex;
+    z-index: 1;
+    overflow-y: auto;
+    flex-direction: column;
+    border: 1px solid silver; }
+    .homework .hw_item .hw_info {
+      width: 100%;
+      min-height: 100px;
+      display: flex;
+      box-sizing: border-box;
+      padding: 0 3%;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid silver; }
+      .homework .hw_item .hw_info .hw_name {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+    .homework .hw_item .hw_qustions {
+      width: 100%;
+      min-height: auto;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      padding: 2% 3%;
+      border: 1px solid silver; }
+    .homework .hw_item .hw_result {
+      width: 100%;
+      min-height: auto;
+      display: flex;
+      flex-direction: column; }
+      .homework .hw_item .hw_result .num {
+        width: 100%; }
+      .homework .hw_item .hw_result .result {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 3% 0; }
+        .homework .hw_item .hw_result .result button {
+          width: 30%;
+          height: 50px;
+          border-radius: 20px;
+          background-color: #36b9ca;
+          font-weight: 900;
+          cursor: pointer; }
+        .homework .hw_item .hw_result .result button:hover {
+          background-color: #5fdaeb; }
+        .homework .hw_item .hw_result .result .qual {
+          width: 30%;
+          margin-top: 20px;
+          height: 30vh;
+          border: 1px solid silver;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center; }
+
+.opacity {
+  opacity: 0; }
+
+.rotate45 {
+  transform: rotate(45deg) !important; }
+
+.rotate-45 {
+  transform: rotate(-45deg) !important; }
+
+.right {
+  right: 0% !important; }
+
+.left {
+  left: 0% !important; }
+
+/*# sourceMappingURL=main.css.map */
