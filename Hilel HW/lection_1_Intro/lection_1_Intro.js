@@ -60,3 +60,7 @@ start1.addEventListener('click',e=>{
         }
     })
 })
+
+
+
+const hw_name = document.querySelector('.hw_name')

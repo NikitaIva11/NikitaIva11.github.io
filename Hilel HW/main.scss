@@ -190,6 +190,18 @@ body{
                 justify-content: center;
 
             }
+            .hw_link{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-align: left;
+                // align-items: center;
+                border-radius: 50%;
+                img{
+                    width: 32px;
+                    height: 32px;
+                }
+            }
         }
         .hw_qustions{
             width: 100%;

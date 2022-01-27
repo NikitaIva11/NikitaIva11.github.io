@@ -163,6 +163,15 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center; }
+      .homework .hw_item .hw_info .hw_link {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: left;
+        border-radius: 50%; }
+        .homework .hw_item .hw_info .hw_link img {
+          width: 32px;
+          height: 32px; }
     .homework .hw_item .hw_qustions {
       width: 100%;
       min-height: auto;
