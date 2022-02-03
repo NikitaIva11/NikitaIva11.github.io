@@ -191,34 +191,6 @@
       flex-direction: column; }
       .homework .hw_item .hw_result .num {
         width: 100%; }
-      .homework .hw_item .hw_result .result {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
-        padding: 3% 0; }
-        .homework .hw_item .hw_result .result button {
-          width: 30%;
-          height: 50px;
-          border-radius: 20px;
-          background-color: #36b9ca;
-          font-weight: 900;
-          cursor: pointer; }
-        .homework .hw_item .hw_result .result button:hover {
-          background-color: #5fdaeb; }
-        .homework .hw_item .hw_result .result .qual {
-          width: 30%;
-          margin-top: 20px;
-          height: 30vh;
-          border: 1px solid silver;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          text-align: center; }
 
 .opacity {
   opacity: 0; }

@@ -1,0 +1,30 @@
+.result {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 3% 0; }
+  .result button {
+    width: 30%;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #36b9ca;
+    font-weight: 900;
+    cursor: pointer; }
+  .result button:hover {
+    background-color: #5fdaeb; }
+  .result .qual {
+    width: 30%;
+    margin-top: 20px;
+    height: 30vh;
+    border: 1px solid silver;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+
+/*# sourceMappingURL=lection_1_Intro.css.map */
