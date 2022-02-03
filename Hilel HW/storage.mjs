@@ -13,8 +13,8 @@ let lessons = [
     </div>
     <div class="hw_link">
         <h2>Link:</h2>
-        <a href="https://github.com/NikitaIva11/NikitaIva11.github.io/blob/main/Hilel%20HW/lection_1_Intro/lection_1_Intro.js">
-            <img src="../github.png" alt="">
+        <a href="https://github.com/NikitaIva11/NikitaIva11.github.io/blob/main/Hilel%20HW/lectionJS/lection_1_Intro.mjs">
+            <img src="./github.png" alt="">
         </a>
         
     </div>
@@ -84,8 +84,8 @@ let lessons = [
     </div>
     <div class="hw_link">
         <h2>Link:</h2>
-        <a href="https://github.com/NikitaIva11/NikitaIva11.github.io/blob/main/Hilel%20HW/lection_1_Intro/lection_1_Intro.js">
-            <img src="../github.png" alt="">
+        <a href="https://github.com/NikitaIva11/NikitaIva11.github.io/blob/main/Hilel%20HW/lectionJS/lection_2.mjs">
+            <img src="./github.png" alt="">
         </a>
         
     </div>
@@ -166,7 +166,7 @@ let lessons = [
                 <div class="all">
 
                 </div>
-                <h2>Сумма всеъ простых чисел:</h2>
+                <h2>Сумма всех простых чисел:</h2>
                 <div class="pow">
 
                 </div>
