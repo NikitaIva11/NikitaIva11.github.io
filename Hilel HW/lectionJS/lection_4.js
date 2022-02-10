@@ -13,14 +13,13 @@ for(let index  = 0 ; index<n;index++){
 
 for(let index  = 0 ; index<n;index++){
     let sum= 0;
-    let col='';
 
     for(let j = 0 ; j<n;j++){
         sum+=a[j][index]
      
         if(sum<0&&j===n-1){
             for(let z =0 ;z<n;z++){
-                delete a[z][index]
+                delete a[z][index] 
             }
         }
     }
