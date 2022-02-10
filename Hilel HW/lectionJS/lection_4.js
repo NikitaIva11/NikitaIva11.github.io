@@ -1,8 +1,6 @@
 let a = []
 let n = 10
 
-let sum1 = 0
-
 for(let index  = 0 ; index<n;index++){
     a[index] = []
     let sum = 0
