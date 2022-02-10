@@ -1,7 +1,6 @@
 let a = []
 let n = 10
 
-
 for (let index = 0; index < n; index++) {
     a[index] = []
     for (let j = 0; j < n; j++) {
@@ -21,5 +20,4 @@ for (let index = 0; index < n; index++) {
         }
     }
 }
-
 console.log(a)
