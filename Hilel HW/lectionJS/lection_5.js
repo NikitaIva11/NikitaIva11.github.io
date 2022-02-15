@@ -10,7 +10,6 @@ function compress(list){
         if(current!==next){
             arr.push((i+1)-step);
             step = i+1;
-            continue;
         }
     }
     return arr;
