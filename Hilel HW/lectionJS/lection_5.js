@@ -1,5 +1,5 @@
-const list = [0,0,0,0,1,1,1,1,1,1,1,0,0,1,1,1,1,0,1]
-const n = list.length
+const list = [0,0,0,0,1,1,1,1,1,1,1,0,0,1,1,1,1,0,1];
+const n = list.length;
 
 function compress(list){
     const arr = [];
@@ -15,4 +15,4 @@ function compress(list){
     return arr;
 }
 let newList = compress(list);
-console.log(newList)
+console.log(newList);
