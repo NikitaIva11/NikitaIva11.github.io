@@ -2,7 +2,7 @@ data = {
      addRecord: function () {
           for(keys in arguments){
                if(typeof arguments[keys]==='object'&&!Array.isArray(arguments[keys])){
-                    data = Object.assign(data,arguments[keys])
+                    Object.assign(data,arguments[keys])
                }
           }
      },
