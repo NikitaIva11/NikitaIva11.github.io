@@ -1,0 +1,279 @@
+@font-face {
+    font-family: "roboto"; 
+    src: url("/SilverAge/Fonts/Roboto-Light.ttf") ; 
+
+    }
+@font-face {
+    font-family: "monserat"; 
+    src: url("/Fonts/Montserrat-Light.ttf") ;
+    }    
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+    $font-monserat:"monserat";
+    $font-roboto:"roboto";
+
+.header{
+    height: 8vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    .links{
+        height: 100%;
+        width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        // text-align: left;
+        
+        
+        a{
+            font-family: $font-monserat;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            font-weight: 900;
+        }
+        
+    }
+    .logo{
+        height: 100%;
+        width: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            height: 100%;
+        }
+    }
+    .socials{
+        height: 100%;
+        width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        a{
+            margin-right: 50px;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+.aboutus{
+    height: 85vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    .text{
+        height: 100%;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        color: #fff;
+        .text1{
+            width: 80%;
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: left;
+            h1{
+                font-family: $font-monserat;
+                font-size: 5vh;
+                
+            }
+            p{
+                font-family: $font-roboto;
+                font-size: 3vh;
+                display: flex;
+                
+            }
+           
+        }
+       
+    }
+    .square{
+        height: 100%;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        img{
+            animation: ease-in-out infinite anim 2s;
+        }
+    }
+}
+
+@keyframes anim{
+    0%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+
+.info{
+    height: 60vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25), inset 0px 0px 100px 60px rgba(0, 0, 0, 0.7);
+
+    .titleinfo{
+        height: 20%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 25px;
+        h1{
+            font-family: $font-monserat;
+            font-size: 7vh;
+        }
+    }
+    .textinfo{
+        height: 80%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 70px;
+        p{
+            font-family: $font-roboto;
+            font-size: 3vh;
+            display: flex;
+            text-align: center;
+            margin-top: 25px;
+            font-size: 3vh;
+        }
+        .form{
+            height: 30%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .cash{
+            height: 30%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .ok{
+            height: 30%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}
+
+.buy{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: url(/images/s_1.png) no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    .tittlebuy{
+        height: 20%;
+        width: 100%;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        h1{
+            font-family: $font-monserat;
+            font-size: 5vh;
+        }
+        p{
+            font-family: $font-roboto;
+            font-size: 3vh;
+        }
+    }
+    .packs{
+        height: 80%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        justify-content: space-evenly;
+        }
+    .pack{
+        width: 20%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #fff;
+        border-radius: 20px;
+        align-items: center;
+        color: black;
+        transition: ease-in-out 0.5s;
+        // box-shadow: 0 0 40px 4px rgba(255, 247, 247, 0.7);
+        img{
+            width: 100px;
+            height: 100px;
+            
+        }
+        p{
+            width: 75%;
+            text-align: left;
+        }
+        button{
+            width: 60%;
+            height: 50px;
+            background: black;
+            color: white;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            transition: ease-in-out 0.5s;
+        }
+        button:hover{
+            background: #fff;
+            border: solid 2px black;
+            color: rgb(0, 0, 0);
+        }
+    }
+    .pack:hover{
+        box-shadow: 0 0 40px 4px rgba(255, 247, 247, 0.7);
+        transform: translateY(-10px);
+    }
+        h1{
+            font-family: $font-monserat;
+            font-size: 4vh;
+        }
+        p{
+            font-family: $font-roboto;
+            font-size: 3vh;
+        }
+    }
