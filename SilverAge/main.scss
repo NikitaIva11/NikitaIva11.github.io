@@ -13,7 +13,6 @@
     margin: 0;
 }
 
-
     $font-monserat:"monserat";
     $font-roboto:"roboto";
 
@@ -277,3 +276,229 @@
             font-size: 3vh;
         }
     }
+
+.sell{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    h1{
+        font-family: $font-monserat;
+        font-size: 5vh;
+    }
+    p{
+        font-family: $font-roboto;
+        font-size: 3vh;
+        margin-top: 35px;
+    }
+    .toptext{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-top: 25px;
+        color: #fff;
+    }
+    .sellinfo{
+        height: 80%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 70px;
+        background-color: black;
+        color: white;
+    }
+    .selltutor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.forma{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    .formasell{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .formtitle{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        h1{
+            font-family: $font-roboto;
+            font-size: 5vh;
+        }
+        p{
+            font-size: 3vh;
+            font-family: $font-monserat;
+        }
+    }
+    .forminput{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        box-sizing: border-box;
+        padding: 0 0 0 5%;
+        .forminputitem{
+            width: 100%;
+            height: 33%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            h2{
+                font-family: $font-roboto;
+                font-size: 4vh;
+            }
+            input{
+                width: 70%;
+                height: 65px;
+                background-color: black;
+                color: white;
+                border-radius: 20px;
+                font-size: 4vh;
+                box-sizing: border-box;
+                padding: 0 3%;
+            }
+            input::placeholder{
+                color: white;
+            }
+        }
+    }
+
+    .buttonclass{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 0 0 0 5%;
+        button{
+            width: 50%;
+            height: 50px;
+            background-color: grey;
+            color: white;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            font-size: 4vh;
+            font-family: $font-roboto;
+        }
+        button:hover{
+            background: rgb(0, 0, 0);
+            border: solid 2px rgb(255, 255, 255);
+            color: rgb(255, 255, 255);
+        }
+    }
+    .black{
+        background-color: black !important;
+        input{
+            background-color: #fff !important;
+            color: black !important;
+        }
+        h1{
+            color: #fff !important;
+        }
+        p{
+            color: #fff !important;
+        }
+        h2{
+            color: #fff !important;
+        }
+        input::placeholder{
+            color: black !important;
+        }
+        button:hover{
+            background: #fff;
+            border: solid 2px black;
+            color: rgb(0, 0, 0);
+        }
+    }
+}
+
+.footer{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+        a{
+            font-family: $font-monserat;
+            font-size: 3vh;
+            padding-top: 4vh;
+        }
+        .logo{
+            width: 35%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            a{
+                padding-top: 10%;
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+        .footlinks{
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // align-items: center;
+            text-align: center;
+            a{
+                color: #fff;
+                font-size: 3vh;
+                text-decoration: none;
+                font-family: $font-monserat;
+            }
+        }
+        .soclinks{
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            .socialimg{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .buttonlink{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                button{
+                    width: 40%;
+                    height: 50px;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #fff;
+                    font-family: $font-monserat;
+                    font-size: 3vh;
+                }
+            }
+        }
+}
