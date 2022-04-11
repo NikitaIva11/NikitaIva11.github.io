@@ -8,8 +8,9 @@ setInterval(function () {
      textarea.value = `${one.value},${two.value},${three.value}`
 }, 1000)
 // 2.---------------------------------------------------------
-clear.addEventListener('click', e => {
-     document.body.querySelectorAll('*').forEach(el => {
-          el.classList.toggle('unset')
-     })
+document.body.querySelectorAll('*').forEach(el => {
+     el.style.color = 'unset'
+     el.style.backgroundColor = 'unset'
+     el.style.width = 'unset'
+     el.style.height = 'unset'
 })
