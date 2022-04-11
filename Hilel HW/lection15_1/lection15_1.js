@@ -1,11 +1,11 @@
 const clear = document.querySelector('.clear')
-const one = document.querySelectorAll('.one')
-const two = document.querySelectorAll('.two')
-const three = document.querySelectorAll('.three')
+const one = document.querySelector('.one')
+const two = document.querySelector('.two')
+const three = document.querySelector('.three')
 const textarea = document.querySelector('textarea')
 // 1.---------------------------------------------------------
 setInterval(function () {
-     textarea.value = one.value + two.value + three.value
+     textarea.value = `${one.value},${two.value},${three.value}`
 }, 1000)
 // 2.---------------------------------------------------------
 clear.addEventListener('click', e => {
