@@ -8,8 +8,8 @@ setInterval(function () {
 }, 1000)
 // 2.---------------------------------------------------------
 document.body.querySelectorAll('*').forEach(el => {
-     el.style.color = 'unset'
-     el.style.backgroundColor = 'unset'
-     el.style.width = 'unset'
-     el.style.height = 'unset'
+     el.style.color = '0'
+     el.style.backgroundColor = '0'
+     el.style.width = '0'
+     el.style.height = '0'
 })
