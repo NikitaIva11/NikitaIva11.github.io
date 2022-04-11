@@ -27,52 +27,52 @@ class superArray {
           if (direaction !== 'row' && direaction !== 'column') {
                return 'неверное значение';
           }
-          if(k>this.mainArr.length||k>this.mainArr[0].length){
+          if (k > this.mainArr.length || k > this.mainArr[0].length) {
                return 'неверная длина';
           }
-          k=k-1
+          k = k - 1
           let cleaArr = this.mainArr.map(el => el)
-          direaction === 'row' ? cleaArr[k] = 0 : cleaArr.forEach(el => el[k] = 0)
+          direaction === 'row' ? cleaArr[k].forEach((el, i) => cleaArr[k][i] = 0) : cleaArr.forEach(el => el[k] = 0)
           return cleaArr
      }
      // 4.-------------------------------------------------------
-     setMarker(cords){
-          let {x,y} = cords
-          if(y>this.mainArr.length||x>this.mainArr[0].length){
+     setMarker(cords) {
+          let { x, y } = cords
+          if (y > this.mainArr.length || x > this.mainArr[0].length) {
                return 'неверная длина';
           }
           let cleaArr = this.mainArr.map(el => el)
-          cleaArr[y-1][x-1] = '&'
+          cleaArr[y - 1][x - 1] = '&'
           return cleaArr;
      }
      // 5.-------------------------------------------------------
-     goTo(cords){
-          let {x,y} = cords
-          if(y>this.mainArr.length||x>this.mainArr[0].length){
+     goTo(cords) {
+          let { x, y } = cords
+          if (y > this.mainArr.length || x > this.mainArr[0].length) {
                return 'неверная длина';
           }
           let cleaArr = this.mainArr.map(el => el)
-          return cleaArr[y-1][x-1]
+          return cleaArr[y - 1][x - 1]
      }
      // 7.-------------------------------------------------------
-     shift(direaction){
+     shift(direaction) {
           let x = 0
           let y = 0
-          let row = this.mainArr[0].length-1
-          let column = this.mainArr.length-1
-          direaction.forEach(el=>{
-               switch(el){
+          let row = this.mainArr[0].length - 1
+          let column = this.mainArr.length - 1
+          direaction.forEach(el => {
+               switch (el) {
                     case 'top':
-                         y+=1
+                         y += 1
                          break;
                     case 'right':
-                         x=row-=1
+                         x = row -= 1
                          break;
                     case 'bottom':
-                         y=column-=1
+                         y = column -= 1
                          break;
                     case 'left':
-                         x+=1
+                         x += 1
                          break;
                }
           })
@@ -82,7 +82,7 @@ class superArray {
 
 let arrInstance = new superArray(5, 5, { min: 5, max: 10 })
 arrInstance.render("_")
-console.log(arrInstance.clear('column', 5))
-console.log(arrInstance.setMarker({x:2,y:3}))
-console.log(arrInstance.goTo({x:4,y:3}))
-console.log(arrInstance.shift(['top','top','top','right']))
+console.log(arrInstance.clear('row', 2))
+console.log(arrInstance.setMarker({ x: 2, y: 3 }))
+console.log(arrInstance.goTo({ x: 4, y: 3 }))
+console.log(arrInstance.shift(['top', 'top', 'top', 'right']))
