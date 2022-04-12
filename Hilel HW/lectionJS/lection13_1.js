@@ -27,9 +27,6 @@ class superArray {
           if (direaction !== 'row' && direaction !== 'column') {
                return 'неверное значение';
           }
-          if (k > this.mainArr.length || k > this.mainArr[0].length) {
-               return 'неверная длина';
-          }
           k = k - 1
           let cleaArr = this.mainArr.map(el => el)
           direaction === 'row' ? cleaArr[k].forEach((el, i) => cleaArr[k][i] = 0) : cleaArr.forEach(el => el[k] = 0)
