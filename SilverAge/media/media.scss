@@ -1,0 +1,812 @@
+@media screen and (orientation: portrait) and (min-width: 280px) and (max-width: 359px) {
+     .header{
+          height: 7vh;
+          justify-content: space-between;
+          position: relative;
+          .burger{
+               display: flex;
+          }
+          .links{
+               position: absolute;
+               width: 40%;
+               height: 250%;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-around;
+               align-items: center;
+               top: 7vh;
+               left: -100%;
+               border:solid 1px black;
+               background-color: #fff;
+               z-index: 300;
+               box-shadow: 0 4px 4px 0 rgba(0,0,0,0.4) inset;
+               a{
+                    width: 70%;
+                    height: 15%;
+                    letter-spacing: 0.2em;
+                    font-size: 1.8vh;
+                    background-color: black;
+                    color: #fff;
+               }
+          }
+          .logo{
+               position: absolute;
+               left: 50%;
+               transform: translateX(-50%);
+               img{
+                    width: 200px;
+               }
+          }
+          .socials{
+               display: none;
+               width:25%;
+               a{
+                    img{
+                         width: 15px;
+                         height: 15px;
+                    }
+               }
+   
+          }
+     }
+     .aboutus{
+          height: 70vh;
+          h1{
+               font-size: 3vh;
+          }
+          img{
+               width: 20vh;
+               height: 20vh;
+          }
+          .text{
+               height: 40%;
+               h1{
+                    font-size: 3vh;
+                    span{
+
+                    }
+               }
+               p{
+                    padding: 10% 3%;
+                    font-size: 1.7vh;
+               }
+          }
+     }
+     .info{
+          height: 80vh;
+          .titleinfo{
+               height: 15%;
+              h1{
+                   font-size: 2.8vh;
+              }
+          }
+          .textinfo{
+               height: 80%;
+               flex-direction: column;
+               .card{
+                    justify-content: center;
+                    align-items: center;
+                   p{
+                    font-size: 2vh;
+                    margin-top: 10px;
+                   } 
+                    img{
+                         width: 40px;
+                         height: 40px;
+                    }
+                    height: 30%;
+                    width: 60%;
+               }
+          }
+        
+     }
+     .sell{
+          height: 80vh;
+          .titleinfo{
+               height: 15%;
+              h1{
+                   font-size: 2.8vh;
+              }
+          }
+          .textinfo{
+               height: 80%;
+               flex-direction: column;
+               .card{
+                    justify-content: center;
+                    align-items: center;
+                   p{
+                    font-size: 2vh;
+                    margin-top: 10px;
+                   } 
+                    img{
+                         width: 40px;
+                         height: 40px;
+                    }
+                    height: 30%;
+                    width: 60%;
+               }
+          }
+     }
+     .forma{
+          height: 60vh;
+          .form{
+               width:80%;
+               height: 80%;
+        
+               border:2px solid #fff;
+               .form_sell{
+               
+                    h1{
+                         font-size: 1.8vh;
+                    }
+                    form{
+                         input{
+                              width: 80%;
+                              height: 30px;
+                              font-size: 2vh;
+                         }
+                         input::placeholder{
+                              font-size: 2vh;
+                         }
+                         .buttons_wrapper{
+                              button{
+                                   width: 35%;
+                                   height: 30px;
+                                   font-size: 1.8vh;
+                              }
+                         }
+                    }
+               }
+          } 
+     }
+     .footer{
+          height: 20vh;
+          .logo{
+               img{
+                    width: 90%;
+                    height: 40px;
+               }
+               p{
+                    font-size: 1vh;
+               }
+          }
+          .footlinks{
+               height: 100%;
+               justify-content: space-between;
+               padding: 12% 0;
+               a{
+                    font-size: 1.5vh;
+               }
+          }
+          .soclinks{
+               box-sizing: border-box;
+               padding: 5% 0;
+               .socialimg{
+                    justify-content: space-between;
+                    padding: 0 10%;
+                    img{
+                         width: 20px;
+                         height: 20px;
+                    }
+               }
+               .buttonlink{
+                    button{
+                         width: 90%;
+                         height: 30px;
+                         border-radius: 5px;
+                         font-size: 2vh;
+                    }
+               }
+          }
+     }
+     
+}
+@media screen  and (orientation: portrait)  and (min-width: 360px) and (max-width: 449px) {
+     .header{
+          height: 7vh;
+          justify-content: space-between;
+          position: relative;
+          .burger{
+               display: flex;
+          }
+          .links{
+               position: absolute;
+               width: 40%;
+               height: 250%;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-around;
+               align-items: center;
+               top: 7vh;
+               left: -100%;
+               border:solid 1px black;
+               background-color: #fff;
+               z-index: 300;
+               box-shadow: 0 4px 4px 0 rgba(0,0,0,0.4) inset;
+               a{
+                    width: 70%;
+                    height: 15%;
+                    letter-spacing: 0.2em;
+                    font-size: 1.8vh;
+                    background-color: black;
+                    color: #fff;
+               }
+          }
+          .logo{
+               position: absolute;
+               left: 50%;
+               transform: translateX(-50%);
+               img{
+                    width: 200px;
+               }
+          }
+          .socials{
+               display: none;
+               width:25%;
+               a{
+                    img{
+                         width: 15px;
+                         height: 15px;
+                    }
+               }
+   
+          }
+     }
+     .aboutus{
+          height: 70vh;
+          h1{
+               font-size: 3vh;
+          }
+          img{
+               width: 20vh;
+               height: 20vh;
+          }
+          .text{
+               height: 40%;
+               h1{
+                    font-size: 3vh;
+                    span{
+
+                    }
+               }
+               p{
+                    padding: 10% 3%;
+                    font-size: 1.7vh;
+               }
+          }
+     }
+     .info{
+          height: 80vh;
+          .titleinfo{
+               height: 15%;
+              h1{
+                   font-size: 2.8vh;
+              }
+          }
+          .textinfo{
+               height: 80%;
+               flex-direction: column;
+               .card{
+                    justify-content: center;
+                    align-items: center;
+                   p{
+                    font-size: 2vh;
+                    margin-top: 10px;
+                   } 
+                    img{
+                         width: 40px;
+                         height: 40px;
+                    }
+                    height: 30%;
+                    width: 60%;
+               }
+          }
+        
+     }
+     .sell{
+          height: 80vh;
+          .titleinfo{
+               height: 15%;
+              h1{
+                   font-size: 2.8vh;
+              }
+          }
+          .textinfo{
+               height: 80%;
+               flex-direction: column;
+               .card{
+                    justify-content: center;
+                    align-items: center;
+                   p{
+                    font-size: 2vh;
+                    margin-top: 10px;
+                   } 
+                    img{
+                         width: 40px;
+                         height: 40px;
+                    }
+                    height: 30%;
+                    width: 60%;
+               }
+          }
+     }
+     .forma{
+          height: 60vh;
+          .form{
+               width:80%;
+               height: 80%;
+        
+               border:2px solid #fff;
+               .form_sell{
+               
+                    h1{
+                         font-size: 1.8vh;
+                    }
+                    form{
+                         input{
+                              width: 80%;
+                              height: 30px;
+                              font-size: 2vh;
+                         }
+                         input::placeholder{
+                              font-size: 2vh;
+                         }
+                         .buttons_wrapper{
+                              button{
+                                   width: 35%;
+                                   height: 30px;
+                                   font-size: 1.8vh;
+                              }
+                         }
+                    }
+               }
+          } 
+     }
+     .footer{
+          height: 20vh;
+          .logo{
+               img{
+                    width: 90%;
+                    height: 40px;
+               }
+               p{
+                    font-size: 1vh;
+               }
+          }
+          .footlinks{
+               height: 100%;
+               justify-content: space-between;
+               padding: 12% 0;
+               a{
+                    font-size: 1.5vh;
+               }
+          }
+          .soclinks{
+               box-sizing: border-box;
+               padding: 5% 0;
+               .socialimg{
+                    justify-content: space-between;
+                    padding: 0 10%;
+                    img{
+                         width: 20px;
+                         height: 20px;
+                    }
+               }
+               .buttonlink{
+                    button{
+                         width: 90%;
+                         height: 30px;
+                         border-radius: 5px;
+                         font-size: 2vh;
+                    }
+               }
+          }
+     }
+     
+}
+@media screen and (orientation: portrait) and (min-width: 450px) and (max-width: 699px) {
+     .header{
+          height: 7vh;
+          justify-content: space-between;
+          position: relative;
+          .burger{
+               display: flex;
+          }
+          .links{
+               position: absolute;
+               width: 40%;
+               height: 250%;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-around;
+               align-items: center;
+               top: 7vh;
+               left: -100%;
+               border:solid 1px black;
+               background-color: #fff;
+               z-index: 300;
+               box-shadow: 0 4px 4px 0 rgba(0,0,0,0.4) inset;
+               a{
+                    width: 70%;
+                    height: 15%;
+                    letter-spacing: 0.2em;
+                    font-size: 1.8vh;
+                    background-color: black;
+                    color: #fff;
+               }
+          }
+          .logo{
+               position: absolute;
+               left: 50%;
+               transform: translateX(-50%);
+               img{
+                    width: 200px;
+               }
+          }
+          .socials{
+               display: none;
+               width:25%;
+               a{
+                    img{
+                         width: 15px;
+                         height: 15px;
+                    }
+               }
+   
+          }
+     }
+     .aboutus{
+          height: 70vh;
+          h1{
+               font-size: 3vh;
+          }
+          img{
+               width: 20vh;
+               height: 20vh;
+          }
+          .text{
+               height: 40%;
+               h1{
+                    font-size: 3vh;
+                    span{
+
+                    }
+               }
+               p{
+                    padding: 10% 3%;
+                    font-size: 1.7vh;
+               }
+          }
+     }
+     .info{
+          height: 80vh;
+          .titleinfo{
+               height: 15%;
+              h1{
+                   font-size: 2.8vh;
+              }
+          }
+          .textinfo{
+               height: 80%;
+               flex-direction: column;
+               .card{
+                    justify-content: center;
+                    align-items: center;
+                   p{
+                    font-size: 2vh;
+                    margin-top: 10px;
+                   } 
+                    img{
+                         width: 40px;
+                         height: 40px;
+                    }
+                    height: 30%;
+                    width: 60%;
+               }
+          }
+        
+     }
+     .sell{
+          height: 80vh;
+          .titleinfo{
+               height: 15%;
+              h1{
+                   font-size: 2.8vh;
+              }
+          }
+          .textinfo{
+               height: 80%;
+               flex-direction: column;
+               .card{
+                    justify-content: center;
+                    align-items: center;
+                   p{
+                    font-size: 2vh;
+                    margin-top: 10px;
+                   } 
+                    img{
+                         width: 40px;
+                         height: 40px;
+                    }
+                    height: 30%;
+                    width: 60%;
+               }
+          }
+     }
+     .forma{
+          height: 60vh;
+          .form{
+               width:80%;
+               height: 80%;
+        
+               border:2px solid #fff;
+               .form_sell{
+               
+                    h1{
+                         font-size: 1.8vh;
+                    }
+                    form{
+                         input{
+                              width: 80%;
+                              height: 30px;
+                              font-size: 2vh;
+                         }
+                         input::placeholder{
+                              font-size: 2vh;
+                         }
+                         .buttons_wrapper{
+                              button{
+                                   width: 35%;
+                                   height: 30px;
+                                   font-size: 1.8vh;
+                              }
+                         }
+                    }
+               }
+          } 
+     }
+     .footer{
+          height: 20vh;
+          .logo{
+               img{
+                    width: 90%;
+                    height: 40px;
+               }
+               p{
+                    font-size: 1vh;
+               }
+          }
+          .footlinks{
+               height: 100%;
+               justify-content: space-between;
+               padding: 12% 0;
+               a{
+                    font-size: 1.5vh;
+               }
+          }
+          .soclinks{
+               box-sizing: border-box;
+               padding: 5% 0;
+               .socialimg{
+                    justify-content: space-between;
+                    padding: 0 10%;
+                    img{
+                         width: 20px;
+                         height: 20px;
+                    }
+               }
+               .buttonlink{
+                    button{
+                         width: 90%;
+                         height: 30px;
+                         border-radius: 5px;
+                         font-size: 2vh;
+                    }
+               }
+          }
+     }
+     
+}
+@media screen and (orientation: portrait) and (min-width: 700px) and (max-width: 1024px) {
+     .header{
+          height: 7vh;
+          justify-content: space-between;
+          position: relative;
+          .burger{
+               display: flex;
+          }
+          .links{
+               position: absolute;
+               width: 40%;
+               height: 250%;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-around;
+               align-items: center;
+               top: 7vh;
+               left: -100%;
+               border:solid 1px black;
+               background-color: #fff;
+               z-index: 300;
+               box-shadow: 0 4px 4px 0 rgba(0,0,0,0.4) inset;
+               a{
+                    width: 70%;
+                    height: 15%;
+                    letter-spacing: 0.2em;
+                    font-size: 1.8vh;
+                    background-color: black;
+                    color: #fff;
+               }
+          }
+          .logo{
+               position: absolute;
+               left: 50%;
+               transform: translateX(-50%);
+               img{
+                    width: 200px;
+               }
+          }
+          .socials{
+               display: none;
+               width:25%;
+               a{
+                    img{
+                         width: 15px;
+                         height: 15px;
+                    }
+               }
+   
+          }
+     }
+     .aboutus{
+          height: 70vh;
+          h1{
+               font-size: 3vh;
+          }
+          img{
+               width: 20vh;
+               height: 20vh;
+          }
+          .text{
+               height: 40%;
+               h1{
+                    font-size: 3vh;
+                    span{
+
+                    }
+               }
+               p{
+                    padding: 10% 3%;
+                    font-size: 1.7vh;
+               }
+          }
+     }
+     .info{
+          height: 80vh;
+          .titleinfo{
+               height: 15%;
+              h1{
+                   font-size: 2.8vh;
+              }
+          }
+          .textinfo{
+               height: 80%;
+               flex-direction: column;
+               .card{
+                    justify-content: center;
+                    align-items: center;
+                   p{
+                    font-size: 2vh;
+                    margin-top: 10px;
+                   } 
+                    img{
+                         width: 40px;
+                         height: 40px;
+                    }
+                    height: 30%;
+                    width: 60%;
+               }
+          }
+        
+     }
+     .sell{
+          height: 80vh;
+          .titleinfo{
+               height: 15%;
+              h1{
+                   font-size: 2.8vh;
+              }
+          }
+          .textinfo{
+               height: 80%;
+               flex-direction: column;
+               .card{
+                    justify-content: center;
+                    align-items: center;
+                   p{
+                    font-size: 2vh;
+                    margin-top: 10px;
+                   } 
+                    img{
+                         width: 40px;
+                         height: 40px;
+                    }
+                    height: 30%;
+                    width: 60%;
+               }
+          }
+     }
+     .forma{
+          height: 60vh;
+          .form{
+               width:80%;
+               height: 80%;
+        
+               border:2px solid #fff;
+               .form_sell{
+               
+                    h1{
+                         font-size: 1.8vh;
+                    }
+                    form{
+                         input{
+                              width: 80%;
+                              height: 30px;
+                              font-size: 2vh;
+                         }
+                         input::placeholder{
+                              font-size: 2vh;
+                         }
+                         .buttons_wrapper{
+                              button{
+                                   width: 35%;
+                                   height: 30px;
+                                   font-size: 1.8vh;
+                              }
+                         }
+                    }
+               }
+          } 
+     }
+     .footer{
+          height: 20vh;
+          .logo{
+               img{
+                    width: 90%;
+                    height: 40px;
+               }
+               p{
+                    font-size: 1vh;
+               }
+          }
+          .footlinks{
+               height: 100%;
+               justify-content: space-between;
+               padding: 12% 0;
+               a{
+                    font-size: 1.5vh;
+               }
+          }
+          .soclinks{
+               box-sizing: border-box;
+               padding: 5% 0;
+               .socialimg{
+                    justify-content: space-between;
+                    padding: 0 10%;
+                    img{
+                         width: 20px;
+                         height: 20px;
+                    }
+               }
+               .buttonlink{
+                    button{
+                         width: 90%;
+                         height: 30px;
+                         border-radius: 5px;
+                         font-size: 2vh;
+                    }
+               }
+          }
+     }
+     
+}

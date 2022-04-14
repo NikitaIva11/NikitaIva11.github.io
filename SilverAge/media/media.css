@@ -1,0 +1,578 @@
+@media screen and (orientation: portrait) and (min-width: 280px) and (max-width: 359px) {
+  .header {
+    height: 7vh;
+    justify-content: space-between;
+    position: relative; }
+    .header .burger {
+      display: flex; }
+    .header .links {
+      position: absolute;
+      width: 40%;
+      height: 250%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      top: 7vh;
+      left: -100%;
+      border: solid 1px black;
+      background-color: #fff;
+      z-index: 300;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4) inset; }
+      .header .links a {
+        width: 70%;
+        height: 15%;
+        letter-spacing: 0.2em;
+        font-size: 1.8vh;
+        background-color: black;
+        color: #fff; }
+    .header .logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); }
+      .header .logo img {
+        width: 200px; }
+    .header .socials {
+      display: none;
+      width: 25%; }
+      .header .socials a img {
+        width: 15px;
+        height: 15px; }
+
+  .aboutus {
+    height: 70vh; }
+    .aboutus h1 {
+      font-size: 3vh; }
+    .aboutus img {
+      width: 20vh;
+      height: 20vh; }
+    .aboutus .text {
+      height: 40%; }
+      .aboutus .text h1 {
+        font-size: 3vh; }
+      .aboutus .text p {
+        padding: 10% 3%;
+        font-size: 1.7vh; }
+
+  .info {
+    height: 80vh; }
+    .info .titleinfo {
+      height: 15%; }
+      .info .titleinfo h1 {
+        font-size: 2.8vh; }
+    .info .textinfo {
+      height: 80%;
+      flex-direction: column; }
+      .info .textinfo .card {
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+        width: 60%; }
+        .info .textinfo .card p {
+          font-size: 2vh;
+          margin-top: 10px; }
+        .info .textinfo .card img {
+          width: 40px;
+          height: 40px; }
+
+  .sell {
+    height: 80vh; }
+    .sell .titleinfo {
+      height: 15%; }
+      .sell .titleinfo h1 {
+        font-size: 2.8vh; }
+    .sell .textinfo {
+      height: 80%;
+      flex-direction: column; }
+      .sell .textinfo .card {
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+        width: 60%; }
+        .sell .textinfo .card p {
+          font-size: 2vh;
+          margin-top: 10px; }
+        .sell .textinfo .card img {
+          width: 40px;
+          height: 40px; }
+
+  .forma {
+    height: 60vh; }
+    .forma .form {
+      width: 80%;
+      height: 80%;
+      border: 2px solid #fff; }
+      .forma .form .form_sell h1 {
+        font-size: 1.8vh; }
+      .forma .form .form_sell form input {
+        width: 80%;
+        height: 30px;
+        font-size: 2vh; }
+      .forma .form .form_sell form input::placeholder {
+        font-size: 2vh; }
+      .forma .form .form_sell form .buttons_wrapper button {
+        width: 35%;
+        height: 30px;
+        font-size: 1.8vh; }
+
+  .footer {
+    height: 20vh; }
+    .footer .logo img {
+      width: 90%;
+      height: 40px; }
+    .footer .logo p {
+      font-size: 1vh; }
+    .footer .footlinks {
+      height: 100%;
+      justify-content: space-between;
+      padding: 12% 0; }
+      .footer .footlinks a {
+        font-size: 1.5vh; }
+    .footer .soclinks {
+      box-sizing: border-box;
+      padding: 5% 0; }
+      .footer .soclinks .socialimg {
+        justify-content: space-between;
+        padding: 0 10%; }
+        .footer .soclinks .socialimg img {
+          width: 20px;
+          height: 20px; }
+      .footer .soclinks .buttonlink button {
+        width: 90%;
+        height: 30px;
+        border-radius: 5px;
+        font-size: 2vh; } }
+@media screen and (orientation: portrait) and (min-width: 360px) and (max-width: 449px) {
+  .header {
+    height: 7vh;
+    justify-content: space-between;
+    position: relative; }
+    .header .burger {
+      display: flex; }
+    .header .links {
+      position: absolute;
+      width: 40%;
+      height: 250%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      top: 7vh;
+      left: -100%;
+      border: solid 1px black;
+      background-color: #fff;
+      z-index: 300;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4) inset; }
+      .header .links a {
+        width: 70%;
+        height: 15%;
+        letter-spacing: 0.2em;
+        font-size: 1.8vh;
+        background-color: black;
+        color: #fff; }
+    .header .logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); }
+      .header .logo img {
+        width: 200px; }
+    .header .socials {
+      display: none;
+      width: 25%; }
+      .header .socials a img {
+        width: 15px;
+        height: 15px; }
+
+  .aboutus {
+    height: 70vh; }
+    .aboutus h1 {
+      font-size: 3vh; }
+    .aboutus img {
+      width: 20vh;
+      height: 20vh; }
+    .aboutus .text {
+      height: 40%; }
+      .aboutus .text h1 {
+        font-size: 3vh; }
+      .aboutus .text p {
+        padding: 10% 3%;
+        font-size: 1.7vh; }
+
+  .info {
+    height: 80vh; }
+    .info .titleinfo {
+      height: 15%; }
+      .info .titleinfo h1 {
+        font-size: 2.8vh; }
+    .info .textinfo {
+      height: 80%;
+      flex-direction: column; }
+      .info .textinfo .card {
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+        width: 60%; }
+        .info .textinfo .card p {
+          font-size: 2vh;
+          margin-top: 10px; }
+        .info .textinfo .card img {
+          width: 40px;
+          height: 40px; }
+
+  .sell {
+    height: 80vh; }
+    .sell .titleinfo {
+      height: 15%; }
+      .sell .titleinfo h1 {
+        font-size: 2.8vh; }
+    .sell .textinfo {
+      height: 80%;
+      flex-direction: column; }
+      .sell .textinfo .card {
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+        width: 60%; }
+        .sell .textinfo .card p {
+          font-size: 2vh;
+          margin-top: 10px; }
+        .sell .textinfo .card img {
+          width: 40px;
+          height: 40px; }
+
+  .forma {
+    height: 60vh; }
+    .forma .form {
+      width: 80%;
+      height: 80%;
+      border: 2px solid #fff; }
+      .forma .form .form_sell h1 {
+        font-size: 1.8vh; }
+      .forma .form .form_sell form input {
+        width: 80%;
+        height: 30px;
+        font-size: 2vh; }
+      .forma .form .form_sell form input::placeholder {
+        font-size: 2vh; }
+      .forma .form .form_sell form .buttons_wrapper button {
+        width: 35%;
+        height: 30px;
+        font-size: 1.8vh; }
+
+  .footer {
+    height: 20vh; }
+    .footer .logo img {
+      width: 90%;
+      height: 40px; }
+    .footer .logo p {
+      font-size: 1vh; }
+    .footer .footlinks {
+      height: 100%;
+      justify-content: space-between;
+      padding: 12% 0; }
+      .footer .footlinks a {
+        font-size: 1.5vh; }
+    .footer .soclinks {
+      box-sizing: border-box;
+      padding: 5% 0; }
+      .footer .soclinks .socialimg {
+        justify-content: space-between;
+        padding: 0 10%; }
+        .footer .soclinks .socialimg img {
+          width: 20px;
+          height: 20px; }
+      .footer .soclinks .buttonlink button {
+        width: 90%;
+        height: 30px;
+        border-radius: 5px;
+        font-size: 2vh; } }
+@media screen and (orientation: portrait) and (min-width: 450px) and (max-width: 699px) {
+  .header {
+    height: 7vh;
+    justify-content: space-between;
+    position: relative; }
+    .header .burger {
+      display: flex; }
+    .header .links {
+      position: absolute;
+      width: 40%;
+      height: 250%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      top: 7vh;
+      left: -100%;
+      border: solid 1px black;
+      background-color: #fff;
+      z-index: 300;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4) inset; }
+      .header .links a {
+        width: 70%;
+        height: 15%;
+        letter-spacing: 0.2em;
+        font-size: 1.8vh;
+        background-color: black;
+        color: #fff; }
+    .header .logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); }
+      .header .logo img {
+        width: 200px; }
+    .header .socials {
+      display: none;
+      width: 25%; }
+      .header .socials a img {
+        width: 15px;
+        height: 15px; }
+
+  .aboutus {
+    height: 70vh; }
+    .aboutus h1 {
+      font-size: 3vh; }
+    .aboutus img {
+      width: 20vh;
+      height: 20vh; }
+    .aboutus .text {
+      height: 40%; }
+      .aboutus .text h1 {
+        font-size: 3vh; }
+      .aboutus .text p {
+        padding: 10% 3%;
+        font-size: 1.7vh; }
+
+  .info {
+    height: 80vh; }
+    .info .titleinfo {
+      height: 15%; }
+      .info .titleinfo h1 {
+        font-size: 2.8vh; }
+    .info .textinfo {
+      height: 80%;
+      flex-direction: column; }
+      .info .textinfo .card {
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+        width: 60%; }
+        .info .textinfo .card p {
+          font-size: 2vh;
+          margin-top: 10px; }
+        .info .textinfo .card img {
+          width: 40px;
+          height: 40px; }
+
+  .sell {
+    height: 80vh; }
+    .sell .titleinfo {
+      height: 15%; }
+      .sell .titleinfo h1 {
+        font-size: 2.8vh; }
+    .sell .textinfo {
+      height: 80%;
+      flex-direction: column; }
+      .sell .textinfo .card {
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+        width: 60%; }
+        .sell .textinfo .card p {
+          font-size: 2vh;
+          margin-top: 10px; }
+        .sell .textinfo .card img {
+          width: 40px;
+          height: 40px; }
+
+  .forma {
+    height: 60vh; }
+    .forma .form {
+      width: 80%;
+      height: 80%;
+      border: 2px solid #fff; }
+      .forma .form .form_sell h1 {
+        font-size: 1.8vh; }
+      .forma .form .form_sell form input {
+        width: 80%;
+        height: 30px;
+        font-size: 2vh; }
+      .forma .form .form_sell form input::placeholder {
+        font-size: 2vh; }
+      .forma .form .form_sell form .buttons_wrapper button {
+        width: 35%;
+        height: 30px;
+        font-size: 1.8vh; }
+
+  .footer {
+    height: 20vh; }
+    .footer .logo img {
+      width: 90%;
+      height: 40px; }
+    .footer .logo p {
+      font-size: 1vh; }
+    .footer .footlinks {
+      height: 100%;
+      justify-content: space-between;
+      padding: 12% 0; }
+      .footer .footlinks a {
+        font-size: 1.5vh; }
+    .footer .soclinks {
+      box-sizing: border-box;
+      padding: 5% 0; }
+      .footer .soclinks .socialimg {
+        justify-content: space-between;
+        padding: 0 10%; }
+        .footer .soclinks .socialimg img {
+          width: 20px;
+          height: 20px; }
+      .footer .soclinks .buttonlink button {
+        width: 90%;
+        height: 30px;
+        border-radius: 5px;
+        font-size: 2vh; } }
+@media screen and (orientation: portrait) and (min-width: 700px) and (max-width: 1024px) {
+  .header {
+    height: 7vh;
+    justify-content: space-between;
+    position: relative; }
+    .header .burger {
+      display: flex; }
+    .header .links {
+      position: absolute;
+      width: 40%;
+      height: 250%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      top: 7vh;
+      left: -100%;
+      border: solid 1px black;
+      background-color: #fff;
+      z-index: 300;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4) inset; }
+      .header .links a {
+        width: 70%;
+        height: 15%;
+        letter-spacing: 0.2em;
+        font-size: 1.8vh;
+        background-color: black;
+        color: #fff; }
+    .header .logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%); }
+      .header .logo img {
+        width: 200px; }
+    .header .socials {
+      display: none;
+      width: 25%; }
+      .header .socials a img {
+        width: 15px;
+        height: 15px; }
+
+  .aboutus {
+    height: 70vh; }
+    .aboutus h1 {
+      font-size: 3vh; }
+    .aboutus img {
+      width: 20vh;
+      height: 20vh; }
+    .aboutus .text {
+      height: 40%; }
+      .aboutus .text h1 {
+        font-size: 3vh; }
+      .aboutus .text p {
+        padding: 10% 3%;
+        font-size: 1.7vh; }
+
+  .info {
+    height: 80vh; }
+    .info .titleinfo {
+      height: 15%; }
+      .info .titleinfo h1 {
+        font-size: 2.8vh; }
+    .info .textinfo {
+      height: 80%;
+      flex-direction: column; }
+      .info .textinfo .card {
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+        width: 60%; }
+        .info .textinfo .card p {
+          font-size: 2vh;
+          margin-top: 10px; }
+        .info .textinfo .card img {
+          width: 40px;
+          height: 40px; }
+
+  .sell {
+    height: 80vh; }
+    .sell .titleinfo {
+      height: 15%; }
+      .sell .titleinfo h1 {
+        font-size: 2.8vh; }
+    .sell .textinfo {
+      height: 80%;
+      flex-direction: column; }
+      .sell .textinfo .card {
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+        width: 60%; }
+        .sell .textinfo .card p {
+          font-size: 2vh;
+          margin-top: 10px; }
+        .sell .textinfo .card img {
+          width: 40px;
+          height: 40px; }
+
+  .forma {
+    height: 60vh; }
+    .forma .form {
+      width: 80%;
+      height: 80%;
+      border: 2px solid #fff; }
+      .forma .form .form_sell h1 {
+        font-size: 1.8vh; }
+      .forma .form .form_sell form input {
+        width: 80%;
+        height: 30px;
+        font-size: 2vh; }
+      .forma .form .form_sell form input::placeholder {
+        font-size: 2vh; }
+      .forma .form .form_sell form .buttons_wrapper button {
+        width: 35%;
+        height: 30px;
+        font-size: 1.8vh; }
+
+  .footer {
+    height: 20vh; }
+    .footer .logo img {
+      width: 90%;
+      height: 40px; }
+    .footer .logo p {
+      font-size: 1vh; }
+    .footer .footlinks {
+      height: 100%;
+      justify-content: space-between;
+      padding: 12% 0; }
+      .footer .footlinks a {
+        font-size: 1.5vh; }
+    .footer .soclinks {
+      box-sizing: border-box;
+      padding: 5% 0; }
+      .footer .soclinks .socialimg {
+        justify-content: space-between;
+        padding: 0 10%; }
+        .footer .soclinks .socialimg img {
+          width: 20px;
+          height: 20px; }
+      .footer .soclinks .buttonlink button {
+        width: 90%;
+        height: 30px;
+        border-radius: 5px;
+        font-size: 2vh; } }
+
+/*# sourceMappingURL=media.css.map */

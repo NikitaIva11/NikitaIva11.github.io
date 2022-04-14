@@ -1,12 +1,29 @@
+@charset "UTF-8";
 @font-face {
   font-family: "roboto";
-  src: url("/SilverAge/Fonts/Roboto-Light.ttf"); }
+  src: url("./Fonts/Roboto-Light.ttf"); }
 @font-face {
   font-family: "monserat";
-  src: url("/Fonts/Montserrat-Light.ttf"); }
+  src: url("./Fonts/Montserrat-Light.ttf"); }
 * {
   padding: 0;
   margin: 0; }
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: #000000; }
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 9em;
+  box-shadow: inset 1px 1px 10px #f3faf7; }
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #253861; }
+
+html {
+  scroll-behavior: smooth; }
 
 .header {
   height: 8vh;
@@ -15,18 +32,86 @@
   display: flex;
   align-items: center;
   text-align: center; }
+  .header .burger {
+    display: none;
+    width: 15%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+    .header .burger .line_wrap {
+      width: 55%;
+      height: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative; }
+      .header .burger .line_wrap span:before {
+        transition: ease-in-out 0.5s all;
+        content: '';
+        top: -7px;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        background-color: black; }
+      .header .burger .line_wrap span:after {
+        transition: ease-in-out 0.5s all;
+        content: '';
+        top: 7px;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        background-color: black; }
+      .header .burger .line_wrap span {
+        width: 100%;
+        height: 2px;
+        transition: ease-in-out 0.5s all;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: black; }
+  .header .active_burger span:before {
+    transition: ease-in-out 0.5s all;
+    content: '';
+    top: 0 !important;
+    transform: translateY(0) rotate(45deg); }
+  .header .active_burger span:after {
+    transition: ease-in-out 0.5s all;
+    content: '';
+    transform: translateY(-7px) rotate(-45deg); }
+  .header .active_burger span {
+    width: 100%;
+    height: 2px;
+    transition: ease-in-out 0.5s all;
+    background-color: transparent !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black; }
   .header .links {
     height: 100%;
     width: 45%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    transition: ease-in-out 0.7s all; }
     .header .links a {
+      width: 20%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: ease-in-out 0.3s all;
       font-family: "monserat";
       text-decoration: none;
       color: black;
-      font-size: 18px;
+      font-size: 3vh;
       font-weight: 900; }
+    .header .links a:hover {
+      color: #fff;
+      background-color: black; }
   .header .logo {
     height: 100%;
     width: 10%;
@@ -42,314 +127,247 @@
     align-items: center;
     justify-content: flex-end; }
     .header .socials a {
-      margin-right: 50px; }
+      margin-right: 30px; }
       .header .socials a img {
-        width: 40px;
-        height: 40px; }
+        width: 5.5vh;
+        height: 5.5vh; }
+  .header .active_link {
+    left: 0 !important; }
 
 .aboutus {
-  height: 85vh;
+  height: 92vh;
   width: 100%;
   background-color: black;
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  text-align: center; }
-  .aboutus .text {
-    height: 100%;
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    color: #fff; }
-    .aboutus .text .text1 {
-      width: 80%;
-      height: 40%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      text-align: left; }
-      .aboutus .text .text1 h1 {
-        font-family: "monserat";
-        font-size: 5vh; }
-      .aboutus .text .text1 p {
-        font-family: "roboto";
-        font-size: 3vh;
-        display: flex; }
-  .aboutus .square {
-    height: 100%;
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; }
-    .aboutus .square img {
-      animation: ease-in-out infinite anim 2s; }
+  text-align: center;
+  color: #fff; }
+  .aboutus .text h2 {
+    font-family: "roboto";
+    font-size: 4vh;
+    margin-bottom: 10px; }
+  .aboutus .text h1 {
+    font-family: "roboto";
+    letter-spacing: 0.3em;
+    font-size: 6vh;
+    font-weight: 900;
+    border: solid 1px white; }
+    .aboutus .text h1 .age {
+      background-color: #fff;
+      color: black; }
+  .aboutus .text p {
+    font-family: "roboto";
+    font-size: 3vh;
+    box-sizing: border-box;
+    padding: 3% 5%;
+    border: solid 1px white; }
+  .aboutus h1 {
+    font-family: "roboto";
+    font-size: 7vh;
+    letter-spacing: 0.3em; }
+  .aboutus img {
+    width: 25vh;
+    height: 25vh;
+    animation: ease-in-out infinite anim 4s; }
 
 @keyframes anim {
   0% {
-    transform: translateY(10px); }
+    transform: translateY(5px); }
   50% {
-    transform: translateY(-10px); }
+    transform: translateY(-5px); }
   100% {
-    transform: translateY(10px); } }
+    transform: translateY(5px); } }
 .info {
-  height: 60vh;
+  height: 55vh;
   width: 100%;
   background-color: #fff;
   display: flex;
-  flex-direction: column;
-  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25), inset 0px 0px 100px 60px rgba(0, 0, 0, 0.7); }
+  flex-direction: column; }
   .info .titleinfo {
     height: 20%;
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    text-align: center;
-    margin-top: 25px; }
+    text-align: center; }
     .info .titleinfo h1 {
-      font-family: "monserat";
-      font-size: 7vh; }
+      font-size: 4vh;
+      font-family: "roboto";
+      letter-spacing: 0.3em; }
   .info .textinfo {
-    height: 80%;
+    height: 70%;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 70px; }
-    .info .textinfo p {
-      font-family: "roboto";
-      font-size: 3vh;
+    align-items: center; }
+    .info .textinfo .card {
+      width: 20%;
       display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
-      margin-top: 25px;
-      font-size: 3vh; }
-    .info .textinfo .form {
-      height: 30%;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center; }
-    .info .textinfo .cash {
-      height: 30%;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center; }
-    .info .textinfo .ok {
-      height: 30%;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center; }
-
-.buy {
-  height: 85vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  background: url(/images/s_1.png) no-repeat;
-  background-size: 100% 100%;
-  color: #fff; }
-  .buy .tittlebuy {
-    height: 20%;
-    width: 100%;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center; }
-    .buy .tittlebuy h1 {
-      font-family: "monserat";
-      font-size: 5vh; }
-    .buy .tittlebuy p {
-      font-family: "roboto";
-      font-size: 3vh; }
-  .buy .packs {
-    height: 80%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    justify-content: space-evenly; }
-  .buy .pack {
-    width: 20%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: #fff;
-    border-radius: 20px;
-    align-items: center;
-    color: black;
-    transition: ease-in-out 0.5s; }
-    .buy .pack img {
-      width: 100px;
-      height: 100px; }
-    .buy .pack p {
-      width: 75%;
-      text-align: left; }
-    .buy .pack button {
-      width: 60%;
-      height: 50px;
-      background: black;
-      color: white;
-      border: none;
-      outline: none;
-      border-radius: 10px;
-      transition: ease-in-out 0.5s; }
-    .buy .pack button:hover {
-      background: #fff;
-      border: solid 2px black;
-      color: black; }
-  .buy .pack:hover {
-    box-shadow: 0 0 40px 4px rgba(255, 247, 247, 0.7);
-    transform: translateY(-10px); }
-  .buy h1 {
-    font-family: "monserat";
-    font-size: 4vh; }
-  .buy p {
-    font-family: "roboto";
-    font-size: 3vh; }
+      box-sizing: border-box;
+      padding: 1% 1%;
+      box-shadow: 0 4px 5px 4px rgba(0, 0, 0, 0.4) inset; }
+      .info .textinfo .card p {
+        font-family: "roboto";
+        font-size: 3vh;
+        display: flex;
+        text-align: center;
+        margin-top: 3vh; }
+      .info .textinfo .card img {
+        width: 10vh;
+        height: 10vh; }
 
 .sell {
+  height: 55vh;
   width: 100%;
-  height: 60vh;
+  background-color: black;
   display: flex;
   flex-direction: column;
-  background-color: black; }
-  .sell h1 {
-    font-family: "monserat";
-    font-size: 5vh; }
-  .sell p {
-    font-family: "roboto";
-    font-size: 3vh;
-    margin-top: 35px; }
-  .sell .toptext {
-    width: 100%;
+  color: #fff; }
+  .sell .titleinfo {
     height: 20%;
+    width: 100%;
     display: flex;
-    text-align: center;
+    align-items: center;
     justify-content: center;
-    margin-top: 25px;
-    color: #fff; }
-  .sell .sellinfo {
-    height: 80%;
+    text-align: center; }
+    .sell .titleinfo h1 {
+      font-size: 4vh;
+      font-family: "roboto";
+      letter-spacing: 0.3em; }
+  .sell .textinfo {
+    height: 70%;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 70px;
-    background-color: black;
-    color: white; }
-  .sell .selltutor {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; }
+    align-items: center; }
+    .sell .textinfo .card {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-sizing: border-box;
+      padding: 1% 1%;
+      border: solid 1px #fff; }
+      .sell .textinfo .card p {
+        font-family: "roboto";
+        font-size: 3vh;
+        display: flex;
+        text-align: center;
+        margin-top: 3vh; }
+      .sell .textinfo .card img {
+        width: 10vh;
+        height: 10vh; }
 
 .forma {
   width: 100%;
-  height: 80vh;
-  display: flex; }
-  .forma .formasell {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: url(/images/s_1.png) no-repeat;
+  background-size: cover; }
+  .forma .form {
     width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column; }
-  .forma .formtitle {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    flex-direction: column;
-    text-align: center; }
-    .forma .formtitle h1 {
-      font-family: "roboto";
-      font-size: 5vh; }
-    .forma .formtitle p {
-      font-size: 3vh;
-      font-family: "monserat"; }
-  .forma .forminput {
-    width: 100%;
     height: 80%;
     display: flex;
+    align-items: center;
+    background-color: black;
+    border: 5px solid white;
     flex-direction: column;
-    justify-content: space-evenly;
     box-sizing: border-box;
-    padding: 0 0 0 5%; }
-    .forma .forminput .forminputitem {
+    padding: 2% 2%; }
+    .forma .form .title {
       width: 100%;
-      height: 33%;
+      height: 10%;
       display: flex;
-      flex-direction: column;
-      justify-content: flex-end; }
-      .forma .forminput .forminputitem h2 {
+      justify-content: center;
+      align-items: center;
+      background-color: black; }
+      .forma .form .title h1 {
+        color: white;
+        font-size: 4vh;
         font-family: "roboto";
-        font-size: 4vh; }
-      .forma .forminput .forminputitem input {
-        width: 70%;
-        height: 65px;
+        letter-spacing: 0.3em; }
+    .forma .form .buttons_wrapper {
+      width: 100%;
+      height: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: black; }
+      .forma .form .buttons_wrapper button {
+        border: none;
+        outline: none;
+        min-width: 30%;
+        height: 7vh;
         background-color: black;
         color: white;
-        border-radius: 20px;
-        font-size: 4vh;
-        box-sizing: border-box;
-        padding: 0 3%; }
-      .forma .forminput .forminputitem input::placeholder {
-        color: white; }
-  .forma .buttonclass {
-    width: 100%;
-    height: 20%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 0 0 0 5%; }
-    .forma .buttonclass button {
-      width: 50%;
-      height: 50px;
-      background-color: grey;
-      color: white;
-      border: none;
-      outline: none;
-      border-radius: 20px;
-      font-size: 4vh;
-      font-family: "roboto"; }
-    .forma .buttonclass button:hover {
-      background: black;
-      border: solid 2px white;
-      color: white; }
-  .forma .black {
-    background-color: black !important; }
-    .forma .black input {
-      background-color: #fff !important;
-      color: black !important; }
-    .forma .black h1 {
-      color: #fff !important; }
-    .forma .black p {
-      color: #fff !important; }
-    .forma .black h2 {
-      color: #fff !important; }
-    .forma .black input::placeholder {
-      color: black !important; }
-    .forma .black button:hover {
-      background: #fff;
-      border: solid 2px black;
-      color: black; }
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        font-size: 2.8vh;
+        font-weight: 900;
+        font-family: "monserat";
+        letter-spacing: 0.1em;
+        border: solid 1px white;
+        transition: ease-in-out 0.5s; }
+      .forma .form .buttons_wrapper .active {
+        background-color: black;
+        color: #fff; }
+      .forma .form .buttons_wrapper button:hover {
+        background-color: #1a1a1a;
+        color: #fff; }
+    .forma .form .form_sell {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center; }
+      .forma .form .form_sell h1 {
+        color: white;
+        font-size: 3vh;
+        font-family: "roboto";
+        letter-spacing: 0.2em; }
+      .forma .form .form_sell form {
+        height: 90%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly; }
+        .forma .form .form_sell form input {
+          border: none;
+          outline: none;
+          height: 35px;
+          border-radius: 10px;
+          display: flex;
+          font-size: 3vh;
+          color: black;
+          align-items: center;
+          box-sizing: border-box;
+          padding: 0 3%; }
+        .forma .form .form_sell form input::placeholder {
+          font-size: 3vh;
+          color: black; }
 
 .footer {
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   display: flex;
   flex-direction: row;
-  background-color: black; }
-  .footer a {
-    font-family: "monserat";
-    font-size: 3vh;
-    padding-top: 4vh; }
+  background-color: black;
+  border-top: 1px solid #fff; }
   .footer .logo {
     width: 35%;
     height: 100%;
@@ -357,25 +375,34 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-right: 1px solid #fff;
     text-align: center; }
-    .footer .logo a {
+    .footer .logo img {
+      width: 30%;
+      height: 10vh; }
+    .footer .logo p {
       padding-top: 10%;
-      text-decoration: none;
+      font-family: "monserat";
       color: #fff; }
   .footer .footlinks {
-    width: 30%;
+    width: 35%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2% 0;
+    border-right: 1px solid #fff;
     text-align: center; }
     .footer .footlinks a {
+      text-align: left;
       color: #fff;
-      font-size: 3vh;
+      font-size: 2.6vh;
       text-decoration: none;
       font-family: "monserat"; }
   .footer .soclinks {
-    width: 30%;
+    width: 35%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -386,22 +413,31 @@
       width: 100%;
       display: flex;
       flex-direction: row;
-      justify-content: space-around; }
+      justify-content: space-around;
+      box-sizing: border-box;
+      padding: 0 20%; }
+      .footer .soclinks .socialimg img {
+        width: 40px;
+        height: 40px; }
     .footer .soclinks .buttonlink {
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: center; }
       .footer .soclinks .buttonlink button {
-        width: 40%;
-        height: 50px;
+        width: 50%;
+        height: 7vh;
         border-radius: 10px;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: #fff;
+        border: none;
+        outline: none;
+        border: solid 1px #fff;
+        color: #fff;
+        background-color: black;
         font-family: "monserat";
-        font-size: 3vh; }
+        font-size: 2.8vh; }
 
 /*# sourceMappingURL=main.css.map */
