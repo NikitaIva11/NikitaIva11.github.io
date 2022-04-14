@@ -1,4 +1,3 @@
-const clear = document.querySelector('.clear')
 const one = document.querySelector('.one')
 const two = document.querySelector('.two')
 const three = document.querySelector('.three')
@@ -9,8 +8,8 @@ setInterval(function () {
 }, 1000)
 // 2.---------------------------------------------------------
 document.body.querySelectorAll('*').forEach(el => {
-     el.style.color = 'unset'
-     el.style.backgroundColor = 'unset'
-     el.style.width = 'unset'
-     el.style.height = 'unset'
+     el.style.color = 'initial'
+     el.style.backgroundColor = 'initial'
+     el.style.width = 'initial'
+     el.style.height = 'initial'
 })
