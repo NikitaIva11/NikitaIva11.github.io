@@ -46,5 +46,5 @@ class times {
         target.appendChild(div);
     }
 }
-const kek = new times();
-kek.renderTimer(document.body)
+const startTimes = new times();
+startTimes.renderTimer(document.body)
