@@ -13,7 +13,6 @@ class times {
         return date.getSeconds();
     }
     getFullTime(){
-        let date = new Date()
         let fullTime = `${this.getHours()}:${this.getMinutes()}:${this.getSeconds()}`;
         return fullTime;
     }
