@@ -1,0 +1,19 @@
+body{ 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock{
+    width: 40%;
+    height: 300px;
+    border:solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock span{
+    font-size: 3vh;
+    padding: 1px;
+    
+}
