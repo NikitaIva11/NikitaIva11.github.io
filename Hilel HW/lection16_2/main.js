@@ -13,7 +13,6 @@ class times {
         return date.getSeconds();
     }
     getFullTime(){
-        let date = new Date()
         let fullTime = `${this.getHours()}:${this.getMinutes()}:${this.getSeconds()}`;
         return fullTime;
     }
@@ -46,5 +45,5 @@ class times {
         target.appendChild(div);
     }
 }
-const kek = new times();
-kek.renderTimer(document.body)
+const startTimes = new times();
+startTimes.renderTimer(document.body)
