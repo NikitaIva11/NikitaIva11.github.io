@@ -1,15 +1,19 @@
 class times {
-    #date = new Date()
+
     getHours() {
-        return this.#date.getHours();
+        let date = new Date()
+        return date.getHours();
     }
     getMinutes(){
-        return this.#date.getMinutes();
+        let date = new Date()
+        return date.getMinutes();
     }
     getSeconds(){
-        return this.#date.getSeconds();
+        let date = new Date()
+        return date.getSeconds();
     }
     getFullTime(){
+        let date = new Date()
         let fullTime = `${this.getHours()}:${this.getMinutes()}:${this.getSeconds()}`;
         return fullTime;
     }
