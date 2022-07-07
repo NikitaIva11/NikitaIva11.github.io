@@ -1,0 +1,41 @@
+*{
+     outline: none;
+     border: none;
+     margin: 0;
+     padding: 0;
+}
+/* .eye{
+animation: eyeClip 1.4s infinite;
+width: 0;
+}
+@keyframes eyeClip {
+     0%{}
+     50%{r:0}
+     100%{}
+} */
+.character{
+     position: absolute;
+     transition: ease 0.2s all;
+}
+.legs{
+     transition: ease-in-out 0.2s all;
+}
+.charBody{
+     transition: ease 0.2s all;
+}
+.walk{
+     animation: walks 1s linear;
+}
+.jump{
+     animation: jumps 0.5s linear;
+}
+@keyframes jumps {
+     0%{}
+     50%{transform: translateY(-100px);}
+     100%{}
+} 
+@keyframes walks {
+     0%{}
+     50%{transform: translateY(20px);}
+     100%{}
+} 
