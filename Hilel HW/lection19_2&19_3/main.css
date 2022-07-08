@@ -1,0 +1,87 @@
+*{
+     outline: none;
+     border: none;
+     margin: 0;
+     padding: 0;
+}
+*{
+     padding: 0;
+     margin: 0;
+     outline: none;
+     border:none;
+}
+body{
+     width: 100%;
+     height: 100vh;
+     background-color: #333333;
+}
+.display{
+     display: flex!important;
+}
+.swipeMenu{
+     animation: swipeTop 0.4s linear;
+}
+@keyframes swipeTop {
+     0%{opacity: 0;transform:translateY(50px) ;}
+     50%{opacity: 0.6;transform:translateY(20px) ;}
+     100%{}
+}
+.main{
+     position: absolute;
+     width: 10%;
+     height: auto;
+     box-sizing: border-box;
+     padding: 40px 0;
+     border:solid 1px rgb(0, 0, 0);
+     list-style: none;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     border-radius: 10px;
+     box-shadow: 0 10px 5px 0 rgba(0,0,0,0.4);
+     color: #fff;
+     display: none;
+}
+.main_item{
+     width: 100%;
+     height: auto;
+     padding: 10px 0;
+     border-bottom: 1px solid rgb(5, 5, 5);
+     letter-spacing: 0.2em;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: ease-in-out 0.3s all;
+     cursor: pointer;
+     user-select: none;
+}
+.main_item:hover{
+     background-color: rgb(59, 59, 59);
+     box-shadow: 0 10px 5px 0 rgba(0,0,0,0.4);
+}
+.character{
+     position: absolute;
+     transition: ease 0.2s all;
+}
+.legs{
+     transition: ease-in-out 0.2s all;
+}
+.charBody{
+     transition: ease 0.2s all;
+}
+.walk{
+     animation: walks 1s linear;
+}
+.jump{
+     animation: jumps 0.5s linear;
+}
+@keyframes jumps {
+     0%{}
+     50%{transform: translateY(-100px);}
+     100%{}
+} 
+@keyframes walks {
+     0%{}
+     50%{transform: translateY(20px);}
+     100%{}
+} 
