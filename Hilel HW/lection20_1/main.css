@@ -1,0 +1,118 @@
+* {
+     margin: 0;
+     padding: 0;
+     outline: none;
+     border: none;
+}
+
+body {
+     width: 100%;
+     height: 100vh;
+     background-color: #333333;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+input::-webkit-inner-spin-button {
+     display: none;
+     margin: 0;
+}
+
+select {
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+   }
+.wrapper {
+     display: flex;
+     flex-direction: column;
+}
+
+.settings_panel {
+     border: 1px solid black;
+     padding: 10px;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+
+.counter_id {
+     background-color: #333333;
+     border: 1px solid rgb(255, 255, 255);
+     height: 30px;
+     color: #fff;
+     box-sizing: border-box;
+     text-align: center;
+     padding: 0 10px;
+     cursor: pointer;
+}
+
+.counter_value {
+     background-color: #333333;
+     border: 1px solid rgb(255, 255, 255);
+     height: 30px;
+     width: 30px;
+     color: #fff;
+     text-align: center;
+}
+.counter_value::placeholder{
+     color: #fff;
+}
+.counter {
+     width: 200px;
+     height: 200px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 30px;
+     color: #fff;
+     border: solid black 1px;
+     flex-direction: column;
+     position: relative;
+     transition: ease-in-out 0.2s all;
+     cursor: pointer;
+     user-select: none;
+}
+
+.wrapper_counter {
+     display: flex;
+}
+
+.clearCounters {
+     padding: 10px;
+     background-color: rgb(201, 85, 85);
+     color: rgb(255, 255, 255);
+     letter-spacing: 0.2em;
+     font-weight: bold;
+     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+     transition: ease-in-out 0.3s all;
+     border-radius: 10px;
+     cursor: pointer;
+     user-select: none;
+}
+
+.setCounter_value {
+     padding: 10px;
+     background-color: rgb(43, 158, 68);
+     color: rgb(255, 255, 255);
+     letter-spacing: 0.2em;
+     font-weight: bold;
+     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+     transition: ease-in-out 0.3s all;
+     border-radius: 10px;
+     cursor: pointer;
+     user-select: none;
+}
+
+.clearCounters:hover {
+
+     background-color: red;
+     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.setCounter_value:hover {
+
+     background-color: rgb(39, 218, 77);
+     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.4);
+}
