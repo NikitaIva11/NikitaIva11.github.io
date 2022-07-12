@@ -21,7 +21,7 @@ function findEndPoint(req, res) {
           res.write(JSON.stringify(data.user_data[urlArr[0]]));
           res.end();
      }
-     if (urlArr.length === 2) {
+     if (urlArr.length === 2&&!req.url.split(/[a-zа-яё]/gi).includes('?')) {
           let newObj = {}
           switch (urlArr[1]) {
                case 'address':
