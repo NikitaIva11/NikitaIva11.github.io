@@ -14,7 +14,7 @@ bot.onText(/\/start/, (msg) => {
      const chatId = msg.chat.id;
      chatIdWriter.writeFile(chatId)
      bot.sendMessage(chatId,
-          `Вы можете отправить такие запросы как:\n\nПрогноз температуры на 24 часа:\nhttp://localhost:7070/weather/forecast/24\n\nПрогноз погоды сейчас:\nhttp://localhost:7070/weather/current\n\nКурс криптовалют:\nhttp://localhost:7070/binance?BTC&ETH
+          `Вы можете отправить такие запросы как:\n\nПрогноз температуры на 24 часа:\nhttp://localhost:7070/weather/forecast/24\nТакже можно передать координаты вашего города:\nhttp://localhost:7070/weather/forecast/24?lat={}&lon={}\n\nПрогноз погоды сейчас:\nhttp://localhost:7070/weather/current\nТакже можно передать координаты вашего города:\nhttp://localhost:7070/weather/current?lat={}&lon={}\n\nКурс криптовалют:\nhttp://localhost:7070/binance?BTC&ETH
           `
           )
 });
