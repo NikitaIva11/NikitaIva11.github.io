@@ -24,6 +24,8 @@ class weatherClass {
      static async weatherNow(req, res, url) {
           try {
                let body = await fetchFunc.fetchGet(url);
+               console.log(url)
+               console.log(body)
                if (body.cod == 400) {
                     res.write(body.message)
                     res.end()
@@ -39,8 +41,8 @@ class weatherClass {
      }
      static async mainWeather(req, res, urlArr, url) {
           if (!url) return;
-          if (urlArr.pathname === '/weather/forecast/24' ) this.weather24(req, res, url);
-          else if (urlArr.pathname === '/weather/current/') this.weatherNow(req, res, url);
+          if (urlArr.includes('forecast') ) this.weather24(req, res, url);
+          else if (urlArr.includes('current')) this.weatherNow(req, res, url);
           else res.end('404');
      }
 }
