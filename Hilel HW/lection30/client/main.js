@@ -20,18 +20,8 @@
 const wrapper = document.querySelector('.wrapper');
 const toDo_title = document.querySelector('.toDo_title');
 const toDo_wrapper = document.querySelector('.toDo-wrapper');
-
-class netWork {
-     constructor() {
-          this.data = this.checkProfile()
-          this.init()
-     }
-     funcMaker = (event) => {
-          let dataFunc = event.target.dataset.func;
-          if (dataFunc) this[dataFunc].bind(this)(event);
-          else return;
-     }
-     async post(url, data) {
+class fetchClass{
+     static async post(url, data) {
           // let spinner = `<div class="spiner_wrapper"><div class="spiner"></div></div>`
           // toDo_wrapper.innerHTML = spinner;
           let send = await fetch(url, {
@@ -44,18 +34,30 @@ class netWork {
          let callBack = await send.json()
           return callBack;
      }
-     async get(url) {
+     static async get(url) {
           let resp = await fetch(url);
           let data = await resp.json();
           return data;
      }
+}
+class toDo {
+     constructor() {
+          this.data = this.checkProfile()
+          this.init()
+     }
+     funcMaker = (event) => {
+          let dataFunc = event.target.dataset.func;
+          if (dataFunc) this[dataFunc].bind(this)(event);
+          else return;
+     }
      async checkProfile() {
-          let ip = await this.get('https://api.ipify.org?format=json');
-          let send = await this.post('http://localhost:3000/createProf', ip);
+          let ip = await fetchClass.get('https://api.ipify.org?format=json');
+          let send = await fetchClass.post('http://localhost:3000/createProf', ip);
           if (send.data.length) this.render();
           return send;
      }
      async addToDo() {
+          toDo_title.value.trim()
           if (toDo_title.value === '') return;
           let data = await this.data;
           let date = new Date()
@@ -67,7 +69,7 @@ class netWork {
                checked: false
           }
           data.data.unshift(toDoItem)
-          this.post('http://localhost:3000/pushToDo', data)
+          fetchClass.post('http://localhost:3000/pushToDo', data)
           this.render();
      }
      async delete(e) {
@@ -81,7 +83,7 @@ class netWork {
                }
           })
           e.target.parentNode.parentNode.remove();
-          this.post('http://localhost:3000/pushToDo', data)
+          fetchClass.post('http://localhost:3000/pushToDo', data)
      }
      async checked(e) {
           let id = e.target.parentNode.parentNode.dataset.id;
@@ -100,10 +102,10 @@ class netWork {
                     return 1
                }
           })
-          this.post('http://localhost:3000/pushToDo', data)
+          fetchClass.post('http://localhost:3000/pushToDo', data)
           this.render()
      }
-     async showMenu(e){
+     showMenu(e){
           let inp_block = e.target.parentElement.parentElement.children[0].children[0];
           let title = e.target.parentElement.parentElement.children[0].children[1];
           ;
@@ -121,10 +123,9 @@ class netWork {
                     el.title = inp.value;
                     el.id = date.getTime(),
                     el.changedTime = `${date.toLocaleDateString()}/${date.getHours()}:${date.getMinutes()}`
-                    console.log(el)
                }
           })
-          this.post('http://localhost:3000/pushToDo', data)
+          fetchClass.post('http://localhost:3000/pushToDo', data)
           this.render()
      
      }
@@ -161,4 +162,4 @@ class netWork {
           wrapper.addEventListener('click', this.func = this.funcMaker)
      }
 }
-let net = new netWork()
+let todo = new toDo()

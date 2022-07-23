@@ -31,6 +31,7 @@ app.post('/createProf', (req, res) => {
 })
 app.post('/pushToDo',(req,res)=>{
   let files = fs.readdirSync('./userData');
+  console.log(req.body)
   fs.writeFileSync(`./userData/${req.body.user}.txt`,JSON.stringify(req.body));
 })
 app.listen(port, () => {
