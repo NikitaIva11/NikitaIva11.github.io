@@ -3,8 +3,6 @@ const toDo_title = document.querySelector('.toDo_title');
 const toDo_wrapper = document.querySelector('.toDo-wrapper');
 class fetchClass{
      static async post(url, data) {
-          // let spinner = `<div class="spiner_wrapper"><div class="spiner"></div></div>`
-          // toDo_wrapper.innerHTML = spinner;
           let send = await fetch(url, {
                method: 'POST',
                headers: {
