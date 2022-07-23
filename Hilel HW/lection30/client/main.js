@@ -1,22 +1,3 @@
-// function sendIp (e){
-//      e.preventDefault()
-//      fetch('https://api.ipify.org?format=json')
-//      .then(resp=>resp.json())
-//      .then(data=>{
-//           fetch('http://localhost:3000/', {
-//                method: 'POST',
-//                headers: {
-//                  'Content-Type': 'application/json;charset=utf-8'
-//                },
-//                body:JSON.stringify(data)
-//              })
-//              .then(resp=>resp.json())
-//      })
-//      e.returnValue =  'loqwdlqwdqw'
-//    }
-
-
-//    window.onload =  sendIp;
 const wrapper = document.querySelector('.wrapper');
 const toDo_title = document.querySelector('.toDo_title');
 const toDo_wrapper = document.querySelector('.toDo-wrapper');
