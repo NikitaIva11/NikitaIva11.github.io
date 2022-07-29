@@ -5,7 +5,6 @@ import InputName from './Components/InputNameComponent/InputName';
 import { Names } from './ListNames/Names';
 
 function App() {
-  let [list,setList] = useState(Names)
   let [inpName,setInpName] = useState('')
   let onInput = useCallback((params)=>{
     setInpName(params)
