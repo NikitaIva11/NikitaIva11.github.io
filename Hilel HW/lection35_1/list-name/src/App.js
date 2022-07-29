@@ -14,7 +14,7 @@ function App() {
       <div className="wrapper">
         <InputName onInput={onInput} />
         <div className="block-wrapper">
-        {list.map((el, index) =>
+        {Names.map((el, index) =>
           <BlockNameComponent 
           key={index} 
           color={el.name === inpName?true:''}
