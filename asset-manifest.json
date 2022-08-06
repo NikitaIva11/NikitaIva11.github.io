@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Hilel%20HW/static/css/main.3a66e993.css",
+    "main.js": "/Hilel%20HW/static/js/main.69eab216.js",
+    "static/js/787.594c3f69.chunk.js": "/Hilel%20HW/static/js/787.594c3f69.chunk.js",
+    "index.html": "/Hilel%20HW/index.html",
+    "main.3a66e993.css.map": "/Hilel%20HW/static/css/main.3a66e993.css.map",
+    "main.69eab216.js.map": "/Hilel%20HW/static/js/main.69eab216.js.map",
+    "787.594c3f69.chunk.js.map": "/Hilel%20HW/static/js/787.594c3f69.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a66e993.css",
+    "static/js/main.69eab216.js"
+  ]
+}
