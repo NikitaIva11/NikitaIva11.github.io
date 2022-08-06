@@ -1,0 +1,33 @@
+.key{
+     width: 40%!important;
+     height: 40px!important;
+     display: flex;
+     align-items: center;
+     color: #fff;
+     padding: 0 3%;
+     border-radius: 10px 0px 0 10px;
+     background-color: rgb(23, 108, 219)!important;
+}
+.value{
+     width: 40%!important;
+     height: 40px!important;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #fff;
+     position: relative;
+     background-color: rgb(17, 93, 192)!important;
+}
+.inp{
+     height: 100%;
+     width: 100%;
+     display: flex;
+     text-align: center;
+     outline:none;
+     border: none;
+     background-color: rgb(5, 70, 155);
+     color: #fff;
+}
+.button{
+     border-radius: 0px 10px 10px 0px!important;
+}
