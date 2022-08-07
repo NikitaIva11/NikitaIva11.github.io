@@ -13,7 +13,6 @@ const Wrapper = () => {
      let {localList, editLocalList,windowParam,setWindowParam} = useContext(localContext);
 
      let createCustomDiv = (event) =>{
-          
           localList.push({
                width:'100px',
                height:'100px',
