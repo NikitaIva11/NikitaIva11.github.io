@@ -1,59 +1,94 @@
-import React, {  useCallback, useContext, useState } from 'react';
+import React, { useCallback, useContext, useState } from 'react';
 import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
-import { localContext } from '../Context/Context';
 import ModalItem from '../ModalItem/ModalItem';
-import { Button } from '@mui/material';
+import { LocalContext } from '../LocalListProvider/LocalListProvider';
 const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 400,
-    bgcolor: 'rgb(0, 30, 60)',
-    p: 4,
-  };
+     position: 'absolute',
+     top: '50%',
+     left: '50%',
+     transform: 'translate(-50%, -50%)',
+     width: 400,
+     bgcolor: '#0A1929',
+     color:'#fff',
+     p: 4,
+};
+const ModalComponent = ({open,handleClose,itemInfo}) => {
+     const {list,putList } = useContext(LocalContext);
+     const {elStyle,index} = itemInfo;
+     let [newItem,setNewItem] = useState({}) ;
   
-const ModalComponent = () => {
-    let {modal,setModal,id,localList,editLocalList} = useContext(localContext);
-    let [editElem,setElem] = useState({})
-    let makeArr = () =>{
-        if(!id)return;
-        let arr = []
-        for(let keys in localList[id]){
-            arr.push({[keys]:localList[id][keys]})
-        }
-        return arr;
-    }
-    let closeModal = (e) =>{
-        e.stopPropagation()
-        setModal(false)
-    }
-    let getElem = useCallback((params)=>{
-        let newArr = localList;
-        newArr[id] = {...localList[id],...params}
-        setElem(newArr)
-    },[id])
-    let changeElem = () =>{
-        editLocalList(editElem)
-        setModal(false)
-    }
-    return (
-        <div>
-            <Modal
-                open={modal}
-                onClick={closeModal}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
-            >
-                <Box onClick={(e)=>{e.stopPropagation()}} sx={style}>
-                    {id&&makeArr().map((el,index)=><ModalItem getElem={getElem} param={el} key={index}/>)}
-                    <Button onClick={changeElem} style={{width:'100%',backgroundColor:'rgb(17, 163, 24)'}} variant="contained">OK</Button>
-                </Box>
-            </Modal>
-
-        </div>
-    )
+     
+     let arr = Object.entries(elStyle);
+     
+     let onCLose = (e)=>{
+          e.stopPropagation()
+          handleClose()
+     }
+     let getNewSettings = useCallback((item)=>{
+          let createNewSettings = {...newItem,...item}
+          setNewItem(createNewSettings)
+     },[newItem])
+     let onChangeSettings = (e)=>{
+          let newList = [...list]
+          newList[index] = {...newList[index],...newItem}
+          putList(newList)
+          setNewItem({})
+          handleClose()
+     }
+     let onDeleteEl = (e)=>{
+          let newList = [...list]
+          newList.splice(index,1)
+          putList(newList)
+          setNewItem({})
+          handleClose()
+     }
+     let onSettings=(e)=>{
+          e.stopPropagation()
+     }
+     return (
+          <div>
+               <Modal
+                    open={open}
+                    onClick={onCLose}
+                    aria-labelledby="modal-modal-title"
+                    aria-describedby="modal-modal-description"
+               >
+                    <Box  onClick={onSettings} sx={style}>
+                         {itemInfo&&arr.map((el,index)=>
+                         <ModalItem 
+                         getNewSettings={getNewSettings}
+                         key={index} 
+                         item={el}/>)}
+                         <Box 
+                         sx={{
+                              display:'flex',
+                              alignItem:'center',
+                              justifyContent:'space-around'
+                         }}
+                         >
+                                 <Button onClick={onDeleteEl}  sx={{
+                              backgroundColor:'red'
+                         }} 
+                         variant="contained"
+                         >
+                              Delete
+                              </Button>
+                         <Button onClick={onChangeSettings}  sx={{
+                              backgroundColor:'green'
+                         }} 
+                         variant="contained"
+                         >
+                              Change
+                              </Button>
+                      
+                         </Box>
+                         
+                    </Box>
+               </Modal>
+          </div>
+     )
 }
 
 export default ModalComponent;

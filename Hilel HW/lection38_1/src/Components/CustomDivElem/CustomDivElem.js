@@ -1,18 +1,16 @@
-import React, {  useContext } from 'react';
-import { localContext } from '../Context/Context';
-const CustomDivElem = ({params,index}) => {
-    let {setModal,setId} = useContext(localContext);
-    let openModal=(e)=>{
-        e.stopPropagation()
-        setModal(true)
-        setId(e.target.dataset.id)
-    }
-    let style = {...params}
-    return (
-        <div data-id={index} onClick={openModal} style={style} className='block'>
- 
-        </div>
-    )
+import { Box } from '@mui/material';
+import React from 'react';
+
+const CustomDivElem = ({ elStyle,handleClose,index }) => {
+     let showDivSettings = (e) =>{
+          e.stopPropagation()
+          handleClose({elStyle,index})
+     }
+     return (
+          <Box onClick={ showDivSettings} className='CustomDivElem' style={{ ...elStyle }}>
+
+          </Box>
+     )
 }
- 
+
 export default CustomDivElem;
