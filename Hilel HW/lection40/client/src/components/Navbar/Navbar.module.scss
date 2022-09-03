@@ -1,0 +1,33 @@
+.navbar_wrapper{
+     width: 100%;
+     height: 7vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-bottom: 1px solid rgb(236, 236, 236);
+     .navbar_container{
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .navbar_button{
+               display: flex;
+               gap:20px;
+               align-items: center;
+               a{
+                    background-color: transparent;
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: black;
+               }
+               .logout{
+                    background-color: red;
+                    color: #fff;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    padding: 5px 10px;
+               }
+          }
+      
+     }
+}

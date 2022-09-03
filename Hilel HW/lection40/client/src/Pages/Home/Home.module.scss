@@ -1,0 +1,23 @@
+.home_wrapper{
+     width: 100%;
+     height: 80%;
+     border:solid 1px rgb(224, 224, 224);
+     overflow-y:auto ;
+     table{
+          width: 100%;
+          // height: 100%;
+          tbody{
+               tr{
+                    td{
+                         box-sizing: border-box;
+                         text-align: center;
+                         border-left:solid 1px rgb(224, 224, 224);
+                         border-right:solid 1px rgb(224, 224, 224);
+                         border-bottom:solid 1px rgb(224, 224, 224);
+                    }
+               }
+          }
+          
+     }
+   
+}
