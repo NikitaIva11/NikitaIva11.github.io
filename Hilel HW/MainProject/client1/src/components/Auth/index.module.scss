@@ -1,0 +1,21 @@
+@import "../../assets/theme";
+
+.auth_textField{
+     width: 40%;
+     height: 30px;
+     border:1px solid var(--border_color);
+     text-align: center;
+     border-radius: 5px;
+     color: black;
+}
+.auth_textField:focus{
+     border:1px solid var(--accent_color);
+}
+.auth_startButton{
+     cursor: pointer;
+     width: 40%;
+     height: 35px;
+     border-radius: 5px;
+     background-color: var(--accent_color)!important;
+     color: var(--textAccent_color);
+}

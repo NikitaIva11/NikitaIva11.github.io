@@ -1,0 +1,12 @@
+@import '../../assets/_theme.scss';
+
+.home_container{
+     height: 90%;
+     display: flex;
+     flex-wrap: wrap;
+     gap: 0 10%;
+     transition: ease-in-out 0.3s all;
+     // justify-content: space-between;
+     // background-color: var(--bg_color);
+     overflow: hidden;
+}

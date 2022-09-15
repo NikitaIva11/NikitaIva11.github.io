@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+$textSmall_size:16px;
+$textDefault_size:20px;
+$textBig_size:25px;
+$text_weight:600;
+$text_fonts:'Open Sans', sans-serif;
+// :root{
+//      --bg_color:#fff;
+//      --accent_color:rgb(57, 154, 233);
+//      --second_color:#dde3ec;
+
+//      --border_color:rgb(221, 221, 221);
+
+//      --text_color:black;
+//      --textAccent_color:rgb(255, 255, 255);
+
+// }
+.light{
+     --bg_color:#fff;
+     --accent_color:rgb(57, 154, 233);
+     --second_color:#dde3ec;
+
+     --border_color:rgb(221, 221, 221);
+
+     --text_color:black;
+     --textAccent_color:rgb(255, 255, 255);
+
+
+}
+.dark{
+     --bg_color:rgb(0, 0, 0);
+     --accent_color:rgb(10, 123, 216);
+     --second_color:rgb(46, 46, 46);
+     
+     --border_color:rgb(221, 221, 221);
+
+     --text_color:rgb(235, 235, 235);
+     --textAccent_color:rgb(255, 255, 255);
+}
+.night{
+     --bg_color:rgb(121, 65, 14);
+     --accent_color:rgb(190, 104, 23);
+     --second_color:#b6743e;
+     
+     --border_color:rgb(221, 221, 221);
+
+     --text_color:rgb(0, 0, 0);
+     --textAccent_color:rgb(0, 0, 0);
+}
+// $bg_color:#fff;
+// $border_color:rgb(221, 221, 221);
+// $text_color:black;
+// $accentText_color:rgb(255, 255, 255);
+// $accent_color:rgb(10, 123, 216);

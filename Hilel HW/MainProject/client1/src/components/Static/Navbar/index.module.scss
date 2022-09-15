@@ -1,0 +1,138 @@
+@import '../../../assets/_theme.scss';
+.navbar_wrapper{
+     width: 100%;
+     height: 7vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-bottom:1px solid var(--border_color);
+     background-color: var(--bg_color);
+     z-index: 3;
+     .container{
+          width: 90%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+         
+          .navigation_links{
+               display: flex;
+               height: 100%;
+               align-items: center;
+               gap: 30px;
+               .navigation_button{
+                    cursor: pointer;
+                    transition: ease-in-out 0.3s all;
+                    line-height: 30px;
+               }
+               .navigation_button:hover{
+                    border-bottom:1px solid var(--accent_color);
+               }
+          }
+          .functional_buttons{
+               display: flex;
+               height: 100%;
+               width: 25%;
+               justify-content: flex-end;
+               align-items: center;
+               gap:0 20px;
+              .log_out{
+                    width: 80px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    height: 40px;
+                    background-color: var(--accent_color);
+                    color: var(--textAccent_color);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+               }
+               .user_container{
+                    width: 30px;
+                    overflow: hidden;
+                    align-items: center;
+                    display: flex;
+                    gap: 0 10px;
+                    cursor: pointer;
+                    transition: ease-in-out 0.3s all;
+                    position: relative;
+                    .user_avatar{
+                         min-width: 30px;
+                         min-height: 30px;
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         cursor: pointer;
+                         svg{
+                              width: 30px;
+                              height:30px;
+                              fill: var(--text_color);
+                         }
+                    }
+               }
+               
+               .them_container{
+                    // height: 100%;
+                    width: auto;
+                    overflow: hidden;
+                    align-items: center;
+                    display: flex;
+                    gap: 0 10px;
+                    cursor: pointer;
+                    transition: ease-in-out 0.3s all;
+                    position: relative;
+                    .theme_picker{
+                         min-width: 35px;
+                         min-height: 35px;
+                         width: 35px;
+                         height: 35px;
+                         overflow: hidden;
+                         display: flex;
+                         // flex-direction: column;
+                         align-items: center;
+                         justify-content: flex-start;
+                         padding: 0 0 0 8px;
+                         border-radius: 50%;
+                         cursor: pointer;
+                         transition: ease-in-out 0.3s all;
+                         background-color: var(--border_color);
+                         gap:0 10px;
+                         // border: 1px solid ;
+                         .light{
+                              min-width: 20px;
+                              min-height: 20px;
+                              border-radius: 50%;
+                              // box-shadow: 0 0 4px 4px rgba(0,0,0,0.4);
+                              background-color: #fff;
+                              cursor: pointer;
+                         }
+                         .dark{
+                              min-width: 20px;
+                              min-height: 20px;
+                              border-radius: 50%;
+                              // box-shadow: 0 0 4px 4px rgba(0,0,0,0.4);
+                              background-color: rgb(0, 0, 0);
+                              cursor: pointer;
+                         }
+                         .night{
+                              min-width: 20px;
+                              min-height: 20px;
+                              border-radius: 50%;
+                              // box-shadow: 0 0 4px 4px rgba(0,0,0,0.4);
+                              background-color: rgb(196, 152, 33);
+                              cursor: pointer;
+                         }
+                    }
+               }
+               .user_container:hover{
+                    width: 90px;
+               }
+               .theme_picker:hover{
+                    border-radius: 5px;
+                    height: 30px;
+                    width: 100px!important;
+               }
+          }
+
+     }
+}
